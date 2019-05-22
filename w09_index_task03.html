@@ -1,0 +1,34 @@
+<html>
+    <head>
+	<title>W09: task 03</title>
+    </head>
+    <body style="margin:0">
+	<script src="three.min.js"></script>
+	<script src="TrackballControls.js"></script>
+	<script src="http://threejs.org/examples/js/math/Lut.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Source/KVSLobsterData.js"></script>
+	<script src="Bounds.js"></script>
+	<script src="Isosurfaces3.js"></script>
+
+	<script type="x-shader/x-vertex" id="shader.vert">
+	 void main()
+	 {
+	     gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+	 }
+	</script>
+
+	<script type="x-shader/x-fragment" id="shader.frag">
+	 void main()
+	 {
+	     gl_FragColor = vec4( 1.0, 1.0, 1.0X, 1.0 );
+	 }
+	</script>
+	
+	<script src="w09_main_task03.js"></script>
+	<script>
+	 main();
+	</script>
+    </body>
+</html>
