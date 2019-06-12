@@ -1,0 +1,39 @@
+<html>
+    <head>
+      <title>Final task</title>
+       <meta http-equiv="content-type" charset="utf-8">
+    </head>
+    <body style="margin:0">
+
+
+
+	<div id="display" style="width: 80%; float: left;"></div>
+	<div id="controller" style="width:20%; float:left;">
+  <label id="label" style="font-family:Arial;"></label>
+<input type="range" min="0" max="255" step="1.0" value="128"
+       id="range"
+       oninput="document.getElementById('output1').value=this.value"/>
+<output id="output1">128</output>
+<button id="change-isovalue-button" style="font-family=Arial;">
+  color_cange</button>
+	</div>
+<script>
+  document.write("僕が行った課題は、3D画像の色の変換です。");
+  document.write("上のバーの数字を調節し、color_cangeを押すとロブスターの色が変わります。");
+  document.write("入力としたデータはロブスターの形を表現する3Dデータです。");
+  document.write("スライドバーによる入力数値をカラーマップに対応させ、それをロブスターの色に表現しました。");
+  </script>
+	<script src="three.min.js"></script>
+	<script src="TrackballControls.js"></script>
+	<script src="http://threejs.org/examples/js/math/Lut.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
+	<script src="http://naohisas.github.io/KVS.js/Source/KVSLobsterData.js"></script>
+	<script src="Bounds.js"></script>
+	<script src="Isosurfaces_final.js"></script>
+	<script src="final_main.js"></script>
+	<script>
+	 main();
+	</script>
+    </body>
+</html>
